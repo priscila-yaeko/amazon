@@ -3,6 +3,8 @@ describe("Amazon Automacao", () => {
     cy.visit("https://www.amazon.com.br/");
     cy.title().should("eq", "Amazon.com.br | Tudo pra você, de A a Z.");
 
+    cy.get(2000);
+
     cy.get("#twotabsearchtextbox").type("iphone 14");
     cy.get("#nav-search-submit-button").click();
     cy.wait(2000);
